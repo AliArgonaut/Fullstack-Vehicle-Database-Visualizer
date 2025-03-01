@@ -1,0 +1,34 @@
+<form #vehicleForm="ngForm" class="vehicle-form" (ngSubmit)="onSubmit()">
+
+    <div class="container">
+        <mat-form-field class="example-full-width">
+          <mat-label>Brand</mat-label>
+          <input name="brand" ngModel matInput/>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Model</mat-label>
+            <input  name="model" ngModel matInput/>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Color</mat-label>
+            <input  name="color" ngModel matInput/>
+          </mat-form-field>
+          
+          <mat-form-field class="example-full-width">
+            <mat-label>Year</mat-label>
+            <input  name="year" ngModel matInput/>
+          </mat-form-field>
+
+          
+          <mat-form-field class="example-full-width">
+            <mat-label>Image Url</mat-label>
+            <input  name="imageUrl" ngModel matInput/> <!--imageIrl may be wrong. it is wrong if image stringes dont reflect on the card-->
+          </mat-form-field>
+
+          <button type="submit" mat-flat-button>Add Car!</button>
+
+    </div>
+
+</form>

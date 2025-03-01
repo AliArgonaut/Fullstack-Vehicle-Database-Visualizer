@@ -1,0 +1,10 @@
+<div class="main">
+    <h1>My vehicles list</h1>
+      <app-vehicle-input (newDataEvent)="appendData($event)"></app-vehicle-input>
+
+  <div class="RowContainer">
+    @for (vehicle of vehicles; track vehicle.id) {
+      <app-vehicle-wrapper (removeItemEvent)="removeItem($event)" [vehicle]="vehicle"></app-vehicle-wrapper>
+    }
+  </div>
+</div>  
