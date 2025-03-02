@@ -1,4 +1,4 @@
-<p>
+
    <app-vehicle-edit *ngIf="editable == true" (editDataEvent)="handleSaveEdition($event)" [vehicle]="vehicle"></app-vehicle-edit>
    <app-vehicle-display *ngIf="editable == false" (editItemEvent) ="handleEditClick()" (removeItemEvent)="removeItemEvent.emit($event)" [vehicle]="vehicle"></app-vehicle-display>
-</p>
+
